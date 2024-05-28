@@ -1,240 +1,472 @@
-<main class="flex w-full overflow-y-hidden bg-gray-50">
+<header
+  class="flex justify-around items-center bg-black text-white fixed bottom-0 w-full sm:hidden"
+>
+  <img src="../../assets/img/Gold Logo.png" alt="logo" class="my-5 w-[3rem]" />
+  <hr class="border border-dashed border-gray-700" />
+  <span
+    class="rotate-180 w-[0.1rem] h-14 border border-dashed border-gray-600"
+  ></span>
 
-    <aside class="flex flex-col  h-screen w-screen min-w-[10rem] max-w-[10rem] bg-black text-white p-4">
-        <div class=" flex justify-center items-center my-5">
-            <img src="../../assets/img/Gold Logo.png" alt="logo">
-        </div>
-        <hr class="mb-10 border border-dashed border-gray-700">
-        <div>
-            <ul class="flex flex-col flex-nowrap text-nowrap items-center ">
-                <li class="li-aside gap-x-3 flex">
-                    <img class="ico" src="" alt="pic">
-                    <span>service</span>
-                </li>
-                <li class="li-aside gap-x-3 flex">
-                    <img class="ico" src="" alt="pic">
-                    <span>About</span>
-                </li>
-                <li class="li-aside gap-x-3 flex">
-                    <img class="ico" src="" alt="pic">
-                    <span>Blog</span>
-                </li>
-                <li class="li-aside gap-x-3 flex">
-                    <img class="ico" src="" alt="pic">
-                    <span>Contact</span>
-                </li>
-            </ul>
-        </div>
-    </aside>
+  <p class="li-aside flex">
+    <img class="ico w-10" src="../../assets/img/service-logo.svg" alt="pic" />
+    <span>service</span>
+  </p>
+  <p class="li-aside flex">
+    <img class="ico" src="" alt="pic" />
+    <span>About</span>
+  </p>
+  <p class="li-aside flex">
+    <img class="ico" src="" alt="pic" />
+    <span>Blog</span>
+  </p>
+  <p class="li-aside flex">
+    <img class="ico" src="" alt="pic" />
+    <span>Contact</span>
+  </p>
+</header>
+<main class="flex w-full overflow-y-hidden bg-yellow-50">
+  <aside
+    class="hidden sm:flex flex-col h-screen w-screen min-w-[10rem] max-w-[10rem] bg-black text-white p-4"
+  >
+    <div class="flex justify-center items-center my-5">
+      <img src="../../assets/img/Gold Logo.png" alt="logo" />
+    </div>
+    <hr class="mb-10 border border-dashed border-gray-700" />
+    <div>
+      <ul class="flex flex-col flex-nowrap text-nowrap items-center">
+        <li class="li-aside gap-x-3 flex">
+          <img class="ico" src="" alt="pic" />
+          <span>service</span>
+        </li>
+        <li class="li-aside gap-x-3 flex">
+          <img class="ico" src="" alt="pic" />
+          <span>About</span>
+        </li>
+        <li class="li-aside gap-x-3 flex">
+          <img class="ico" src="" alt="pic" />
+          <span>Blog</span>
+        </li>
+        <li class="li-aside gap-x-3 flex">
+          <img class="ico" src="" alt="pic" />
+          <span>Contact</span>
+        </li>
+      </ul>
+    </div>
+  </aside>
 
-    <main class="h-screen w-screen flex flex-col justify-between overflow-y-scroll overflow-x-hidden">
-   
-   <!-- top -->
-        <section class="top flex flex-wrap justify-around items-center bg-gradient-to-r from-amber-100 to-yellow-200 shadow-xl shadow-gray-300 ">
-            <div class="text-center text-3xl text-gray-800 italic">
-                <p class="text-3xl sm:text-4xl font-extrabold mb-2">ZAHA DIGITAL TECHNOLOGY</p>
-                <P>Lorem ipsum dolor sit amet.</P>
-                <P>Lorem ipsum dolor sit amet.</P>
-            </div>
-            <img src="../../assets/img/first-img.svg" alt="">
-        </section>
+  <main
+    class="h-screen w-screen flex flex-col justify-between overflow-y-scroll overflow-x-hidden"
+  >
+    <!-- top -->
+    <section
+      class="top flex flex-wrap justify-around items-center bg-gradient-to-r from-amber-100 to-yellow-200 shadow-xl shadow-gray-300"
+    >
+      <div class="text-center text-3xl text-gray-800 italic">
+        <p class="text-3xl sm:text-4xl font-extrabold mb-2">
+          ZAHA DIGITAL TECHNOLOGY
+        </p>
+        <P>Lorem ipsum dolor sit amet.</P>
+        <P>Lorem ipsum dolor sit amet.</P>
+      </div>
+      <img src="../../assets/img/first-img.svg" alt="" />
+    </section>
 
-            <!-- Services Section -->
-<section id="services" class="py-12">
-    <div class="container mx-auto text-center">
+    <!-- Services Section -->
+    <section id="services" class="py-12">
+      <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6">Our Services</h2>
 
         <!-- Digital Services -->
-        <div class="mb-12">
-            <h3 class="text-2xl font-semibold mb-4">Digital Services</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">Google Business Account Customization</h4>
-                    <p class="text-gray-700">Customization of your Google business account to enhance visibility.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $1000</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">Logo Design</h4>
-                    <p class="text-gray-700">Professional logo design to represent your brand.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $1000</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">Social Media Marketing</h4>
-                    <p class="text-gray-700">Comprehensive marketing on Facebook, Instagram, and WhatsApp.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $3000</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">Website Design</h4>
-                    <p class="text-gray-700">Custom website design tailored to your business needs.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $10000</p>
-                </div>
-                <!-- Add more services as needed -->
+        <div class="flex flex-row flex-wrap justify-center items-center mb-12">
+          <h3 class="text-2xl font-semibold mb-4">Digital Services</h3>
+          <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">
+                Google Business Account Customization
+              </h4>
+              <p class="text-gray-700">
+                Customization of your Google business account to enhance
+                visibility.
+              </p>
             </div>
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">Logo Design</h4>
+              <p class="text-gray-700">
+                Professional logo design to represent your brand.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">Social Media Marketing</h4>
+              <p class="text-gray-700">
+                Comprehensive marketing on Facebook, Instagram, and WhatsApp.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">Price: $3000</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">Website Design</h4>
+              <p class="text-gray-700">
+                Custom website design tailored to your business needs.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">Price: $10000</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">SEO</h4>
+              <p class="text-gray-700">
+                Search Engine Optimization services for improved online
+                visibility.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: Custom Quote
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">App Development</h4>
+              <p class="text-gray-700">
+                Customized application development for your business needs.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: Custom Quote
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md w-64">
+              <h4 class="text-xl font-semibold mb-2">Digital Package</h4>
+              <p class="text-gray-700">
+                Bundle of Google Business Account Customization, Logo Design,
+                and Social Media Marketing.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: $5000 (Basic), $12000 (Premium)
+              </p>
+            </div>
+            <!-- Add more services as needed -->
+          </div>
         </div>
 
         <!-- Legal Services -->
         <div>
-            <h3 class="text-2xl font-semibold mb-4">Legal Services</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">GST (Registration, Return)</h4>
-                    <p class="text-gray-700">GST registration and return filing services.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $1500, $500</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">MSME Registration</h4>
-                    <p class="text-gray-700">Registration under the Micro, Small and Medium Enterprises Act.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $750</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h4 class="text-xl font-semibold mb-2">Pan Card Services</h4>
-                    <p class="text-gray-700">Assistance in obtaining PAN cards.</p>
-                    <p class="text-blue-500 font-semibold mt-2">Price: $300</p>
-                </div>
-                <!-- Add more services as needed -->
+          <h3 class="text-2xl font-semibold mb-4">Legal Services</h3>
+          <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">
+                GST (Registration, Return)
+              </h4>
+              <p class="text-gray-700">
+                GST registration and return filing services.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">Price: $1500, $500</p>
             </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">MSME Registration</h4>
+              <p class="text-gray-700">
+                Registration under the Micro, Small and Medium Enterprises Act.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">Price: $750</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">Pan Card Services</h4>
+              <p class="text-gray-700">Assistance in obtaining PAN cards.</p>
+              <p class="text-blue-500 font-semibold mt-2">Price: $300</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">Import Export Code</h4>
+              <p class="text-gray-700">
+                Assistance in obtaining Import Export Code.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">Price: $2000</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">FSSAI</h4>
+              <p class="text-gray-700">
+                FSSAI registration and compliance services.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: $600 onwards
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">
+                Municipality Trade/Shop Licence
+              </h4>
+              <p class="text-gray-700">
+                Assistance in obtaining trade/shop licenses from the
+                municipality.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: $1000 onwards
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">
+                Income Tax Return Filing
+              </h4>
+              <p class="text-gray-700">
+                Assistance in filing income tax returns.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: $1000 onwards
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">
+                Balance Sheet Preparation
+              </h4>
+              <p class="text-gray-700">
+                Preparation of balance sheets for your business.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: $3000 onwards
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">BIS Jewellery Licence</h4>
+              <p class="text-gray-700">
+                Assistance in obtaining BIS jewellery license.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: Custom Quote
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md">
+              <h4 class="text-xl font-semibold mb-2">Legal Package</h4>
+              <p class="text-gray-700">
+                Bundle of GST Registration, MSME Registration, FSSAI, and
+                Municipality Trade/Shop Licence.
+              </p>
+              <p class="text-blue-500 font-semibold mt-2">
+                Price: Custom Quote
+              </p>
+            </div>
+            <!-- Add more services as needed -->
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- About Us Section -->
-<section id="about" class="bg-gray-100 py-12">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">About Us</h2>
-        <p class="text-lg text-gray-700 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="flex justify-center">
-            <div class="w-1/2 md:w-1/3">
-                <img src="about-us.jpg" alt="About Us" class="rounded-full shadow-lg">
-            </div>
+    <!-- About Us Section -->
+    <section id="about" class="bg-yellow-100 py-12">
+      <h2 class="text-3xl text-center font-bold mb-6">About Us</h2>
+      <div class="flex justify-center p-4 items-center flex-wrap">
+        <img src="../../assets/img/web-development 1.svg" alt="" />
+        <div class="max-w-md">
+          <p class="mb-4 flex flex-col justify-center items-cen text-justify">
+            At Zaha & Digital Solutions, we understand the challenges business
+            owners face in juggling digital and legal responsibilities alongside
+            their core operations. Founded by a duo with over a decade of
+            combined expertise in digital marketing, development, and legal
+            services, our goal is to streamline these complex processes,
+            allowing you to focus on what you do best—running your business.
+          </p>
+          <p class="mb-4 text-justify">
+            With experience spanning digital strategies and legal compliance, we
+            equip our clients with the tools and support necessary to thrive in
+            a competitive marketplace. Whether enhancing your online presence
+            through customized digital solutions or navigating regulatory
+            requirements with our comprehensive legal services, we are here to
+            ensure that your operational needs are met efficiently and
+            effectively.
+          </p>
+          <p class="mb-4 text-justify">
+            At Zaha & Digital Solutions, your business success is our priority.
+            We take pride in being the behind-the-scenes support that helps you
+            grow, innovate, and lead.
+          </p>
         </div>
-        <p class="text-lg text-gray-700 mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- How It Works Section -->
-<section id="how-it-works" class="py-12">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">How It Works</h2>
-        <p class="text-lg text-gray-700 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="flex flex-col items-center">
-                <div class="bg-white rounded-full p-4">
-                    <img src="step-1-icon.png" alt="Step 1" class="w-12 h-12">
-                </div>
-                <p class="text-lg font-semibold mt-4">Step 1</p>
-                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div class="bg-white rounded-full p-4">
-                    <img src="step-2-icon.png" alt="Step 2" class="w-12 h-12">
-                </div>
-                <p class="text-lg font-semibold mt-4">Step 2</p>
-                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <div class="bg-white rounded-full p-4">
-                    <img src="step-3-icon.png" alt="Step 3" class="w-12 h-12">
-                </div>
-                <p class="text-lg font-semibold mt-4">Step 3</p>
-                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+    <!-- How It Works Section -->
+    <section class="py-12">
+      <div class="flex flex-col justify-center items-center p-4">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">How It Works</h2>
+          <p class="text-lg text-gray-700 mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-    </div>
-</section>
+        <div class="flex flex-col justify-center items-center gap-8">
+          <!-- one htw -->
+          <div
+            class="flex items-center justify-between flex-col md:flex-row gap-4"
+          >
+            <img
+              src="../../assets/img/htw-1.svg"
+              alt="Step 1"
+              class="w-[15rem] md:w-[20rem]"
+            />
+            <div class="max-w-[25rem] text-justify">
+              <p class="text-2xl font-extrabold my-4">
+                Consultation and Customization:
+              </p>
+              <p class="text-gray-800">
+                Your journey with us begins with a comprehensive consultation
+                where we discuss your business needs and challenges. Based on
+                this discussion, we tailor a unique blend of digital and legal
+                solutions that align with your business goals and operational
+                requirements.
+              </p>
+            </div>
+          </div>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="bg-gray-100 py-12">
-    <div class="container mx-auto text-center">
+          <!-- two htw -->
+          <div
+            class="flex flex-col-reverse md:flex-row items-center justify-center gap-4"
+          >
+            <div class="max-w-[25rem] text-justify">
+              <p class="text-2xl font-extrabold my-4">
+                Implementation and Execution:
+              </p>
+              <p class="text-gray-800">
+                Once we have identified the optimal solutions, our team of
+                experts gets to work. We handle everything from setting up your
+                Google business account and designing your website to handling
+                legal registrations and compliance. Our seamless execution
+                ensures that all aspects of your digital and legal setup are
+                managed without disrupting your daily operations.
+              </p>
+            </div>
+            <img
+              src="../../assets/img/htw-2.svg"
+              alt="Step 2"
+              class="w-[15rem] md:w-[20rem]"
+            />
+          </div>
+
+          <!-- three htw -->
+          <div
+            class="flex items-center justify-center flex-col md:flex-row gap-4"
+          >
+            <img
+              src="../../assets/img/htw-3.svg"
+              alt="Step 3"
+              class="w-[15rem] md:w-[20rem]"
+            />
+            <div class="max-w-[25rem]">
+              <p class="text-2xl font-extrabold my-4">
+                Ongoing Support and Optimization:
+              </p>
+              <p class="text-gray-800 text-justify">
+                After implementation, we continue to support your business by
+                monitoring the performance of digital strategies and ensuring
+                legal compliance is up to date. We provide regular updates and
+                optimizations to adapt to new trends and regulations, keeping
+                your business ahead of the curve and continuously improving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-gray-100 py-12">
+      <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6">Portfolio</h2>
-        <p class="text-lg text-gray-700 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="text-lg text-gray-700 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-lg p-6 shadow-md">
-                <img src="portfolio-1.jpg" alt="Portfolio 1" class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project Title</h3>
-                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-md">
-                <img src="portfolio-2.jpg" alt="Portfolio 2" class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project Title</h3>
-                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-md">
-                <img src="portfolio-3.jpg" alt="Portfolio 3" class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-xl font-semibold mb-2">Project Title</h3>
-                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <img
+              src="portfolio-1.jpg"
+              alt="Portfolio 1"
+              class="w-full h-auto rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <img
+              src="portfolio-2.jpg"
+              alt="Portfolio 2"
+              class="w-full h-auto rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <img
+              src="portfolio-3.jpg"
+              alt="Portfolio 3"
+              class="w-full h-auto rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Project Title</h3>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Contact Section -->
-<section class="contacts">
-    <div class="contact-left">
+    <!-- Contact Section -->
+    <section class="contacts">
+      <div class="contact-left">
         <h1>Let’s discuss your Project</h1>
-        <p>There are many variations of passages of Lorem Ipsu available. but the majority have suffered alte.
+        <p>
+          There are many variations of passages of Lorem Ipsu available. but the
+          majority have suffered alte.
         </p>
 
         <!-- location -->
         <div class="contact location">
-            <img class="!bg-black" src="../../assets/img/location.svg" alt="">
-            <div class="content">
-                <h5>Address:</h5>
-                <p>Nagapattinam District ,TamilNadu</p>
-            </div>
+          <img class="!bg-black" src="../../assets/img/location.svg" alt="" />
+          <div class="content">
+            <h5>Address:</h5>
+            <p>Nagapattinam District ,TamilNadu</p>
+          </div>
         </div>
-
 
         <!-- mail -->
         <div class="contact email">
-            <img src="../../assets/img/email.svg" alt="">
-            <div class="content">
-                <h5>My Email:</h5>
-                <p>Abdulmusavir8888gmail.com</p>
-            </div>
+          <img src="../../assets/img/email.svg" alt="" />
+          <div class="content">
+            <h5>My Email:</h5>
+            <p>Abdulmusavir8888gmail.com</p>
+          </div>
         </div>
-
 
         <!-- phone -->
         <div class="contact phone">
-            <img src="../../assets/img/phone.svg" alt="">
-            <div class="content">
-                <h5>Call Me Now:</h5>
-                <p>+91 867 896 6685</p>
-            </div>
+          <img src="../../assets/img/phone.svg" alt="" />
+          <div class="content">
+            <h5>Call Me Now:</h5>
+            <p>+91 867 896 6685</p>
+          </div>
         </div>
-    </div>
+      </div>
 
-
-    <!-- contact-right -->
-    <div class="contact-right">
-        <input type="text" placeholder="Name*">
-        <input type="text" placeholder="Email*">
-        <input type="text" placeholder="Location">
+      <!-- contact-right -->
+      <div class="contact-right">
+        <input type="text" placeholder="Name*" />
+        <input type="text" placeholder="Email*" />
+        <input type="text" placeholder="Location" />
         <div>
-            <input type="text" placeholder="budget*">
-            <input type="text" placeholder="subject*">
+          <input type="text" placeholder="budget*" />
+          <input type="text" placeholder="subject*" />
         </div>
-        <input type="text" placeholder="Message*">
+        <input type="text" placeholder="Message*" />
 
         <button>Submit</button>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- footer -->
-        <footer class="flex justify-between items-center bg-gray-100 p-8">
-            <div>
-                <h1>Enter Some text</h1>
-            </div>
-            <div>
-                <h1>Enter Some text</h1>
-            </div>
-            <div>
-                <h1>Enter Some text</h1>
-            </div>
-        </footer>
-    </main>
-
+    <!-- footer -->
+    <footer class="flex justify-between items-center bg-gray-100 p-8">
+      <div>
+        <h1>Enter Some text</h1>
+      </div>
+      <div>
+        <h1>Enter Some text</h1>
+      </div>
+      <div>
+        <h1>Enter Some text</h1>
+      </div>
+    </footer>
+  </main>
 </main>
-

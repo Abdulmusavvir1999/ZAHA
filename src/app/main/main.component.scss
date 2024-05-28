@@ -9,7 +9,8 @@
     color: #fff;
     background: rgba(0, 0, 0, 0.175);
     cursor: pointer;
-    margin-bottom: 7rem;
+    @apply  sm:mb-[7rem] ;
+    // margin-bottom: 7rem;
 }
 
 .li-aside span {
