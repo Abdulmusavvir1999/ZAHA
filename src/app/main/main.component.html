@@ -1,5 +1,5 @@
 <header
-  class="flex justify-around items-center bg-black text-white fixed bottom-0 w-full sm:hidden"
+  class="flex justify-around items-center bg-black text-white fixed z-10 bottom-0 w-full sm:hidden"
 >
   <img src="../../assets/img/Gold Logo.png" alt="logo" class="my-5 w-[3rem]" />
   <hr class="border border-dashed border-gray-700" />
@@ -29,25 +29,33 @@
     class="hidden sm:flex flex-col h-screen w-screen min-w-[10rem] max-w-[10rem] bg-black text-white p-4"
   >
     <div class="flex justify-center items-center my-5">
-      <img src="../../assets/img/Gold Logo.png" alt="logo" />
+      <img class="!w-24 px-4" src="../../assets/img/Gold Logo.png" alt="logo" />
     </div>
     <hr class="mb-10 border border-dashed border-gray-700" />
     <div>
       <ul class="flex flex-col flex-nowrap text-nowrap items-center">
+        <!-- service -->
         <li class="li-aside gap-x-3 flex">
-          <img class="ico" src="" alt="pic" />
+          <img
+            class="ico"
+            src="../../assets/img/briefcase-icon.svg"
+            alt="pic"
+          />
           <span>service</span>
         </li>
+        <!-- About -->
         <li class="li-aside gap-x-3 flex">
-          <img class="ico" src="" alt="pic" />
+          <img class="ico" src="../../assets/img/about.svg" alt="pic" />
           <span>About</span>
         </li>
+        <!-- blog -->
         <li class="li-aside gap-x-3 flex">
-          <img class="ico" src="" alt="pic" />
+          <img class="ico" src="../../assets/img/blog.svg" alt="pic" />
           <span>Blog</span>
         </li>
+        <!-- contact -->
         <li class="li-aside gap-x-3 flex">
-          <img class="ico" src="" alt="pic" />
+          <img class="ico" src="../../assets/img/contact.svg" alt="pic" />
           <span>Contact</span>
         </li>
       </ul>
@@ -61,14 +69,15 @@
     <section
       class="top flex flex-wrap justify-around items-center bg-gradient-to-r from-amber-100 to-yellow-200 shadow-xl shadow-gray-300"
     >
-      <div class="text-center text-3xl text-gray-800 italic">
+      <div class="relative text-center text-3xl text-gray-800 italic">
+        <img src="../../assets/img/bell_2 1.svg" alt="" />
         <p class="text-3xl sm:text-4xl font-extrabold mb-2">
           ZAHA DIGITAL SOLUTIONS
         </p>
-        <P>Lorem ipsum dolor sit amet.</P>
-        <P>Lorem ipsum dolor sit amet.</P>
+        <P>Empowering Your Business, Simplifying Compliance.</P>
+        <P> Digital and Legal Solutions, All in One Place.</P>
       </div>
-      <img src="../../assets/img/first-img.svg" alt="" />
+      <img class="w-[50%]" src="../../assets/img/first-img.svg" alt="" />
     </section>
 
     <!-- Services Section -->
@@ -78,10 +87,16 @@
 
         <!-- Digital Services -->
         <div class="flex flex-row flex-wrap justify-center items-center mb-12">
-          <h3 class="text-2xl font-semibold mb-4">Digital Services</h3>
+          <h3 class="text-2xl font-semibold mb-8">Digital Services</h3>
           <div class="flex flex-wrap justify-center gap-8">
-            <div class="bg-white rounded-lg p-6 shadow-md w-64">
-              <h4 class="text-xl font-semibold mb-2">
+            <!-- google service -->
+            <div class="bg-white rounded-lg p-6 shadow-md w-64 relative">
+              <div
+                class="ds absolute top-[-1.55rem] left-[6.75rem] overflow-hidden"
+              >
+                <img class="" src="../../assets/img/contact.svg" alt="" />
+              </div>
+              <h4 class="text-xl font-semibold my-2">
                 Google Business Account Customization
               </h4>
               <p class="text-gray-700">
@@ -279,21 +294,15 @@
       <div class="flex flex-col justify-center items-center p-4">
         <div class="container mx-auto text-center">
           <h2 class="text-3xl font-bold mb-6">How It Works</h2>
-          <p class="text-lg text-gray-700 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
         </div>
         <div class="flex flex-col justify-center items-center gap-8">
           <!-- one htw -->
           <div
-            class="flex items-center justify-between flex-col md:flex-row gap-4"
+            class="flex items-start justify-between flex-col md:flex-row gap-6"
           >
-            <img
-              src="../../assets/img/htw-1.svg"
-              alt="Step 1"
-              class="w-[15rem] md:w-[20rem]"
-            />
+            <div
+              class="hiw-img1 w-[20rem] h-[13rem] mt-6 md:w-[20rem] bg-black p-20 rounded-2xl shadow-xl shadow-black-300"
+            ></div>
             <div class="max-w-[25rem] text-justify">
               <p class="text-2xl font-extrabold my-4">
                 Consultation and Customization:
@@ -310,7 +319,7 @@
 
           <!-- two htw -->
           <div
-            class="flex flex-col-reverse md:flex-row items-center justify-center gap-4"
+            class="flex flex-col-reverse md:flex-row items-center justify-center gap-6"
           >
             <div class="max-w-[25rem] text-justify">
               <p class="text-2xl font-extrabold my-4">
@@ -325,22 +334,18 @@
                 managed without disrupting your daily operations.
               </p>
             </div>
-            <img
-              src="../../assets/img/htw-2.svg"
-              alt="Step 2"
-              class="w-[15rem] md:w-[20rem]"
-            />
+            <div
+              class="hiw-img2 w-[20rem] h-[13rem] mt-6 md:w-[20rem] bg-black p-20 rounded-2xl shadow-xl shadow-black-300"
+            ></div>
           </div>
 
           <!-- three htw -->
           <div
             class="flex items-center justify-center flex-col md:flex-row gap-4"
           >
-            <img
-              src="../../assets/img/htw-3.svg"
-              alt="Step 3"
-              class="w-[15rem] md:w-[20rem]"
-            />
+            <div
+              class="hiw-img3 w-[20rem] h-[13rem] mt-6 md:w-[20rem] bg-black p-20 rounded-2xl shadow-xl shadow-black-300"
+            ></div>
             <div class="max-w-[25rem]">
               <p class="text-2xl font-extrabold my-4">
                 Ongoing Support and Optimization:
@@ -406,7 +411,7 @@
 
     <!-- Contact Section -->
     <section class="!bg-yellow-100 p-4">
-      <div class="contacts !bg-yellow-50">
+      <div class="contacts flex-col sm:flex-row !bg-yellow-50">
         <div class="contact-left">
           <h1>Let’s discuss your Project</h1>
           <p>
@@ -451,21 +456,28 @@
           </div>
           <input type="text" placeholder="Message*" />
 
-          <button>Submit</button>
+          <button class="bg-gradient-to-r from-yellow-300 to-yellow-100">
+            Submit
+          </button>
         </div>
       </div>
     </section>
 
     <!-- footer -->
-    <footer class="flex justify-between items-center bg-gray-100 p-8">
-      <div>
-        <h1>Enter Some text</h1>
+    <footer
+      class="flex flex-wrap justify-between items-center bg-black textwh pb-12 p-8"
+    >
+      <div class="flex gap-x-2 cursor-pointer">
+        <p class="f-text">About</p>
+        <p class="f-text">Service</p>
+        <p class="f-text">Blog</p>
+        <p class="f-text">Contact</p>
       </div>
       <div>
-        <h1>Enter Some text</h1>
+        <img class="w-[5rem]" src="../../assets/img/Gold Logo.png" alt="" />
       </div>
       <div>
-        <h1>Enter Some text</h1>
+        <h1 class="f-text">Copyright © 2024 zaha</h1>
       </div>
     </footer>
   </main>
