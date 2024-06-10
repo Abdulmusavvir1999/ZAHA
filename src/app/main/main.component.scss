@@ -5,13 +5,13 @@
   @apply relative;
 
   h1 {
-    @apply text-transparent text-8xl font-extrabold;
+    @apply text-transparent text-6xl sm:text-8xl font-extrabold;
     -webkit-text-stroke: 1px rgba(124, 124, 124, 0.444);
     text-align: center;
   }
 
   h4 {
-    @apply absolute left-1/2 bottom-[0.1rem] font-extrabold text-4xl;
+    @apply absolute left-1/2 bottom-[-0.2rem] sm:bottom-[0.1rem] font-extrabold text-nowrap text-2xl sm:text-4xl;
     transform: translateX(-50%) translateY(-50%);
   }
 }
