@@ -2,3 +2,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* scroll-bar */
+.scroll-down {
+  position: relative;
+  width: 2rem;
+  height: 3rem;
+  border: 2px solid red;
+  border-radius: 1rem;
+  position: fixed;
+  z-index: 10;
+  bottom: 5%;
+  right: 2%;
+  box-shadow: inset 0px 0px 100px 10px red;
+  animation: bounce 2s infinite;
+  z-index: 110;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border: 2px solid red;
+  height: 0.7rem;
+  width: 0.7rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-bottom: transparent;
+  border-right: transparent;
+}
+
+.scroll-down::before {
+  top: 65%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+//web kit
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 rounded-md;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-yellow-50 rounded-md;
+}

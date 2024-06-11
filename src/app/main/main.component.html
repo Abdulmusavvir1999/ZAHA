@@ -28,7 +28,12 @@
     <span class="">Contact</span>
   </p>
 </header>
+
 <main class="flex w-full overflow-y-hidden bg-white">
+  <!-- scroll.component.html -->
+
+  <div class="scroll-down" [class.active]="isActive"></div>
+  <div><a class="scroll-down" href="#"></a></div>
   <!-- side menu -->
   <aside
     class="hidden sm:flex flex-col h-screen w-screen min-w-[10rem] max-w-[10rem] bg-black text-white p-4"
@@ -598,62 +603,7 @@
     </section> -->
 
     <!-- Contact Section -->
-    <section class="!bg-yellow-100 p-4 mb-10 sm:mb-0">
-      <div class="heading mb-4">
-        <h1>CONTACT</h1>
-        <h4>CONTACT US</h4>
-      </div>
-      <div class="contacts flex-col md:flex-row !bg-yellow-50">
-        <div class="contact-left">
-          <h1>Let’s discuss your Project</h1>
-          <p>
-            There are many variations of passages of Lorem Ipsu available. but
-            the majority have suffered alte.
-          </p>
-
-          <!-- mail -->
-          <div class="contact email">
-            <img src="../../assets/img/email.svg" alt="" />
-            <div class="content">
-              <h5>My Email:</h5>
-              <p>Abdulmusavir8888gmail.com</p>
-            </div>
-          </div>
-          <!-- location -->
-          <div class="contact location">
-            <img class="" src="../../assets/img/location.svg" alt="" />
-            <div class="content">
-              <h5>Address:</h5>
-              <p>Nagapattinam District ,TamilNadu</p>
-            </div>
-          </div>
-          <!-- phone -->
-          <div class="contact phone">
-            <img src="../../assets/img/phone.svg" alt="" />
-            <div class="content">
-              <h5>Call Me Now:</h5>
-              <p>+91 867 896 6685</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- contact-right -->
-        <div class="contact-right">
-          <input type="text" placeholder="Name*" />
-          <input type="text" placeholder="Email*" />
-          <input type="text" placeholder="Location" />
-          <div>
-            <input type="text" placeholder="budget*" />
-            <input type="text" placeholder="subject*" />
-          </div>
-          <input type="text" placeholder="Message*" />
-
-          <button class="bg-gradient-to-r from-yellow-300 to-yellow-100">
-            Submit
-          </button>
-        </div>
-      </div>
-    </section>
+    <app-contact></app-contact>
 
     <!-- footer -->
     <footer
