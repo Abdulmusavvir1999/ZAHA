@@ -1,29 +1,33 @@
-<!-- <header
-  class="flex justify-around items-center bg-black text-white fixed z-10 bottom-0 w-full sm:hidden"
+<header
+  class="flex justify-between items-center gap-5 p-4 bg-black text-white fixed z-10 bottom-0 w-full sm:hidden"
 >
-  <img src="../../assets/img/Gold Logo.png" alt="logo" class="my-5 w-[3rem]" />
-  <hr class="border border-dashed border-gray-700" />
+  <!-- <img src="../../assets/img/Gold Logo.png" alt="logo" class="w-[3rem]" /> -->
+  <!-- <hr class="border border-dashed border-gray-700" />
   <span
     class="rotate-180 w-[0.1rem] h-14 border border-dashed border-gray-600"
-  ></span>
+  ></span> -->
 
-  <p class="li-aside flex">
-    <img class="ico w-10" src="../../assets/img/service-logo.svg" alt="pic" />
-    <span>service</span>
+  <!-- service -->
+  <p class="li-aside gap-x-1 flex">
+    <img class="w-4" src="../../assets/img/briefcase-icon.svg" alt="pic" />
+    <span class="">service</span>
   </p>
-  <p class="li-aside flex">
-    <img class="ico" src="" alt="pic" />
-    <span>About</span>
+  <!-- About -->
+  <p class="li-aside gap-x-1 flex">
+    <img class="w-4" src="../../assets/img/about.svg" alt="pic" />
+    <span class="">About</span>
   </p>
-  <p class="li-aside flex">
-    <img class="ico" src="" alt="pic" />
-    <span>Blog</span>
+  <!-- blog -->
+  <p class="li-aside gap-x-1 flex">
+    <img class="w-4" src="../../assets/img/blog.svg" alt="pic" />
+    <span class="">Blog</span>
   </p>
-  <p class="li-aside flex">
-    <img class="ico" src="" alt="pic" />
-    <span>Contact</span>
+  <!-- contact -->
+  <p class="li-aside gap-x-1 flex">
+    <img class="w-4" src="../../assets/img/contact.svg" alt="pic" />
+    <span class="">Contact</span>
   </p>
-</header> -->
+</header>
 <main class="flex w-full overflow-y-hidden bg-white">
   <!-- side menu -->
   <aside
@@ -67,51 +71,45 @@
     class="h-screen w-screen flex flex-col justify-between overflow-y-scroll overflow-x-hidden"
   >
     <!-- top -->
-    <!-- <section
-      class="top flex flex-wrap justify-around items-center bg-gradient-to-r from-amber-100 to-yellow-200 shadow-xl shadow-gray-300"
-    >
-      <div class="relative text-center text-3xl text-gray-800 italic">
-        <img src="../../assets/img/bell_2 1.svg" alt="" />
-        <p class="text-3xl sm:text-4xl font-extrabold mb-2">
-          ZAHA DIGITAL SOLUTIONS
-        </p>
-        <P>Empowering Your Business, Simplifying Compliance.</P>
-        <P> Digital and Legal Solutions, All in One Place.</P>
-      </div>
-      <img class="w-[50%]" src="../../assets/img/first-img.svg" alt="" />
-    </section> -->
+    <section class="bg-[#1090cb4b] flex flex-col justify-start">
+      <p class="text-3xl text-center sm:text-4xl font-extrabold py-2">
+        ZAHA DIGITAL SOLUTIONS
+      </p>
+      <div class="flex flex-wrap-reverse gap-x-8">
+        <!-- left side -->
+        <div class="pb-5 min-w-[100%]">
+          <h1 class="text-2xl lg:text-5xl font-bold">
+            Your Success, Our Mission:
+            <span class="text-sky-500">Expert Digital and Legal</span>
+            Strategies in One Place
+          </h1>
+          <p class="py-5 text-gray-700 text-lg">
+            Zaha & Digital Solutions offers comprehensive digital and legal
+            services to streamline your business operations. From advanced
+            digital marketing strategies to complete legal compliance, our
+            experienced team provides tailored solutions to enhance your online
+            presence and ensure regulatory adherence. Partner with us to empower
+            your business with the expertise it needs to thrive.
+          </p>
+          <div>
+            <button class="border bg-blue-600 text-white px-8 py-2 rounded-xl">
+              Contact Us
+            </button>
+            <button
+              class="border border-blue-600 bg-white text-sky-500 px-8 py-2 rounded-xl ml-8"
+            >
+              View More
+            </button>
+          </div>
+        </div>
 
-    <section class="bg-[#1090cb4b] flex justify-around items-center">
-      <!-- left side -->
-      <div class="pt-10 px-3">
-        <h1 class="text-5xl font-bold max-w-[75%]">
-          Experienced
-          <span class="text-sky-500">mobile and web</span> applications and
-          website builders measuring.
-        </h1>
-        <p class="py-5 text-lg max-w-[75%]">
-          KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-          applications and website builders measuring dozens of completed
-          projects. We build and develop mobile applications for several top
-          platforms, including Android & IOS.
-        </p>
-        <div>
-          <button class="border bg-blue-600 text-white px-8 py-2 rounded-xl">
-            Contact Us
-          </button>
-          <button
-            class="border border-blue-600 bg-white text-sky-500 px-8 py-2 rounded-xl ml-8"
-          >
-            View More
-          </button>
+        <!-- right Side -->
+        <div class="max-w-[50%]">
+          <img class="w-[20rem]" src="../../assets/img/demo img.svg" alt="" />
         </div>
       </div>
-
-      <!-- right Side -->
-      <div>
-        <img src="../../assets/img/demo img.svg" alt="" />
-      </div>
     </section>
+
     <!-- Services Section -->
     <section id="services" class="py-12">
       <div class="container mx-auto text-center">
@@ -600,8 +598,8 @@
     </section> -->
 
     <!-- Contact Section -->
-    <section class="!bg-yellow-100 p-4">
-      <div class="heading">
+    <section class="!bg-yellow-100 p-4 mb-10 sm:mb-0">
+      <div class="heading mb-4">
         <h1>CONTACT</h1>
         <h4>CONTACT US</h4>
       </div>
@@ -659,7 +657,7 @@
 
     <!-- footer -->
     <footer
-      class="flex flex-wrap justify-between items-center bg-black textwh pb-12 p-8"
+      class="md:flex flex-wrap justify-between items-center bg-black textwh p-8 hidden"
     >
       <div class="flex gap-x-2 cursor-pointer">
         <p class="f-text">About</p>
